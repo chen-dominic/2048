@@ -2,18 +2,29 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1 .0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>2048</title>
         <link rel="stylesheet" href="2048.css">
         <script src="2048.js"></script>
     </head>
 
     <body>
+
+        <div id="overlay"></div>
         <h1>2048</h1>
         <hr>
         <h2>Score: <span id="score">0</span></h2>
         <div id="board">
             
         </div>
+        <h2 class="state" id="state">Game <span id="game-state">On</span></h2>
+        <button class="reset-btn" id="reset-btn" onclick="setNewGame();">
+            <span class="btn-text">Reset</span>
+        </button>
+        <div class="htp-container">
+            <h1>How to Play:</h1>
+            <p>Use arrow keys to move up, down, left, right.</p>
+        </div>
+
     </body>
 </html>

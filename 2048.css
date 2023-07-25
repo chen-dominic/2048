@@ -9,6 +9,19 @@ hr{
     width: 500px;
 }
 
+#overlay{
+    opacity:    0.5; 
+    background: #000; 
+    width:      100%;
+    height:     100%; 
+    z-index:    1;
+    top:        0; 
+    left:       0; 
+    position:   fixed;
+
+    display: none;
+}
+
 #board{
     width: 400px;
     height: 400px;
@@ -94,6 +107,68 @@ hr{
 }
 
 .x8192{
-    background-color: #ff2020  ;
+    background-color: #ff5555  ;
     color: white;
+}
+
+.state{
+    display: none;
+    font-weight: 800;
+    font-size: 1.8rem;
+    z-index: 9;
+}
+.state span{
+    color: green;
+}
+
+.reset-btn {
+    border-radius: 30px;
+    font-weight: 600;
+    position: absolute;
+    border: 1px solid black;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    font-size: 1.1rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.2s all ease-in-out;
+  }
+  .reset-btn .btn-text {
+    font-family: inherit;
+    padding: 0 2rem;
+    color: black;
+  }
+
+  .reset-btn:hover{
+    background-color: rgb(204, 183, 145);
+}
+
+.htp-container{
+    border-radius: 40px;
+    font-weight: 600px;
+    position: absolute;
+    border: 1px solid rgb(51, 51, 51);
+    background-color: rgb(206, 182, 156);
+    font-size: 1.2rem;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    transition: 0.4s all ease-in-out;
+}
+
+.htp-container:hover{
+    background-color: rgb(66, 66, 66);
+}
+
+.htp-container h1{
+    color: rgb(230, 230, 230);
+}
+
+.htp-container p{
+    transform: translateY(-10px);
+    color: rgb(230, 230, 230);
+    font-weight: 500;
 }
