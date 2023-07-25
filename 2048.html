@@ -14,9 +14,20 @@
     <body>
 
         <div id="overlay"></div>
-        <h1>2048</h1>
-        <hr>
-        <h2>Score: <span id="score">0</span> &emsp;&emsp; High Score: <span id="hi-score">0</span></h2>
+        <div class="header-con">
+            <div class="title-box">
+                <h1>2048</h1>
+            </div>
+            
+            <div class="score-box">
+                <h2>SCORE<h3 id="score">0</h3></h2>
+            </div>
+            <div class="hi-box">
+                <h2>BEST<br><h3 id="hi-score">0</h3></h2>
+            </div>
+            
+        </div>
+
         <div id="board">
             
         </div>
@@ -24,6 +35,7 @@
         <button class="reset-btn" id="reset-btn" onclick="setNewGame();">
             <span class="btn-text">Reset</span>
         </button>
+        
         <div class="htp-container">
             <h1>How to Play:</h1>
             <p>Use arrow keys to move up, down, left, right.</p>

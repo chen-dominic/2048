@@ -1,8 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    background-color: bisque;
-
+    background-color: rgb(248, 248, 238);
 }
 
 hr{
@@ -44,6 +43,74 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header-con{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    padding: 2% 36%;
+}
+
+.header-con .title-box{
+    border-radius: 5%;
+    display: flex;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(230, 197, 66);
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-con .title-box h1{
+    font-weight: 600;
+    color: white;
+}
+
+.header-con .score-box{
+    border-radius: 5%;
+    display: flex;
+    height: 120px;
+    width: 140px;
+    background-color: rgb(183, 173, 161);
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.header-con .score-box h2{
+    position: absolute;
+    color: rgb(236, 228, 215);
+}
+
+.header-con .score-box h3{
+    position: absolute;
+    color: white;
+    font-size: 1.8rem;
+    top: 85px;
+}
+
+.header-con .hi-box{
+    border-radius: 5%;
+    display: flex;
+    height: 120px;
+    width: 140px;
+    background-color: rgb(183, 173, 161);
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.header-con .hi-box h2{
+    position: absolute;
+    color: rgb(236, 228, 215);
+}
+
+.header-con .hi-box h3{
+    position: absolute;
+    color: white;
+    font-size: 1.8rem;
+    top: 85px;
 }
 
 .x2{
@@ -112,33 +179,41 @@ hr{
 }
 
 .state{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     display: none;
     font-weight: 800;
-    font-size: 1.8rem;
-    z-index: 9;
+    font-size: 8rem;
+    z-index: 11;
 }
 .state span{
     color: green;
 }
 
 .reset-btn {
-    border-radius: 30px;
+    border-radius: 10px;
     font-weight: 600;
     position: absolute;
-    border: 1px solid black;
-    top: 72%;
+    top: 76%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: transparent;
+    background-color: rgb(225, 156, 101);
     font-size: 1.3rem;
     cursor: pointer;
     z-index: 10;
     transition: 0.2s all ease-in-out;
+    text-transform: uppercase;
+    width: 150px;
+    height: 50px;
+    border: none;
   }
   .reset-btn .btn-text {
+    font-size: 1rem;
     font-family: inherit;
     padding: 0 2rem;
-    color: black;
+    color: white;
   }
 
   .reset-btn:hover{
@@ -146,29 +221,38 @@ hr{
 }
 
 .htp-container{
-    border-radius: 40px;
+    border-radius: 10px;
     font-weight: 600px;
     position: absolute;
-    border: 1px solid rgb(51, 51, 51);
-    background-color: rgb(206, 182, 156);
+    border: none;
+    background-color: rgb(219, 182, 142);
     font-size: 1.2rem;
-    top: 85%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 500px;
     transition: 0.4s all ease-in-out;
 }
 
-.htp-container:hover{
-    background-color: rgb(66, 66, 66);
-}
+/* .htp-container:hover{
+    background-color: rgb(207, 194, 178);
+} */
 
 .htp-container h1{
     color: rgb(230, 230, 230);
+    transition: 0.2s all ease-in-out;
+}
+
+.htp-container h1:hover{
+    color: rgb(80, 80, 80);
 }
 
 .htp-container p{
     transform: translateY(-10px);
     color: rgb(230, 230, 230);
     font-weight: 500;
+    transition: 0.2s all ease-in-out;
+}
+.htp-container p:hover{
+    color: rgb(80, 80, 80);
 }
