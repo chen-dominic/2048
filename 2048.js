@@ -1,5 +1,6 @@
 var board;
 var score = 0;
+var hi_score = 0;
 var rows = 4;
 var cols = 4;
 
@@ -49,6 +50,11 @@ function setNewGame(){
         [0,0,0,0]
     ]
 
+    if(hi_score < score){
+        hi_score = score;
+    }
+    document.getElementById("hi-score").innerText = hi_score;
+
     score = 0;
     document.getElementById("score").innerText = score;
 
@@ -83,8 +89,8 @@ function setTwo(){
         let tile = document.getElementById(r.toString() + "-" + c.toString());
 
         if(board[r][c] == 0){
-            let chance = Math.random() * 8;
-            if(chance < 7){
+            let chance = Math.random();
+            if(chance > 0.1){
                 board[r][c] = 2;
                 tile.innerText = "2";
                 tile.classList.add("x2");
@@ -151,6 +157,7 @@ document.addEventListener('keyup', (e) => {
         slideDown();
         setTwo();
     }
+
     
     document.getElementById("score").innerText = score;
 });
