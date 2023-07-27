@@ -261,6 +261,24 @@ hr{
     color: rgb(80, 80, 80);
 }
 
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 0px;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+    transition: all .4s ease-in-out;
+    display: none;
+}
+
+.buttons .arrow:hover{
+    filter: saturate(150%);
+}
+
 @media screen and (max-width: 1440px){
     #board{
         width: 360px;
@@ -337,8 +355,8 @@ hr{
         font-size: 0.5rem;
     }
     .header-con .score-box h3{
-        font-size: 1.8rem;
-        top: 20px;
+        font-size: 1.3rem;
+        top: 30px;
     }
     .header-con .hi-box{
         height: 70px;
@@ -346,8 +364,8 @@ hr{
         font-size: 0.5rem;
     }
     .header-con .hi-box h3{
-        font-size: 1.8rem;
-        top: 20px;
+        font-size: 1.3rem;
+        top: 30px;
     }
     .htp-container{
         font-weight: 500px;
@@ -359,5 +377,31 @@ hr{
         width: 120px;
         height: 40px;
         top: 65%;
+    }
+}
+@media screen and (max-width: 730px){
+    .htp-container{
+        display: none;
+    }
+    .state{
+        font-size: 5rem;
+    }
+    .reset-btn {
+
+        font-weight: 600;
+        position: absolute;
+        top: 61%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        font-size: 1.3rem;
+        width: 80px;
+        height: 30px;
+      }
+    .reset-btn .btn-text {
+        font-size: 0.6rem;
+      }
+
+    .buttons{
+        display: grid;
     }
 }
