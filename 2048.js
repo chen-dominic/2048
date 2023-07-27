@@ -158,7 +158,7 @@ document.addEventListener('keyup', (e) => {
         setTwo();
     }
     
-    document.getElementById("score").innerText = score;
+    updateScore();
 });
 
 function filterZero(row){
@@ -278,4 +278,8 @@ function gameOver(){
     document.getElementById("game-state").innerText = "OVER";
     document.getElementById("game-state").style.color = "red";
     document.getElementById("overlay").style.display = 'block';
+}
+
+function updateScore(){
+    document.getElementById("score").innerText = score;
 }
