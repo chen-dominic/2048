@@ -213,6 +213,10 @@ hr{
     font-size: 1rem;
     font-family: inherit;
     padding: 0 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     color: white;
   }
 
@@ -255,4 +259,105 @@ hr{
 }
 .htp-container p:hover{
     color: rgb(80, 80, 80);
+}
+
+@media screen and (max-width: 1440px){
+    #board{
+        width: 360px;
+        height: 360px;
+    }
+    .tile{
+        width: 80px;
+        height: 80px;
+        font-size: 35px;
+    }
+    .header-con .title-box{
+        height: 100px;
+        width: 100px;
+        font-size: 1rem;
+    }
+    
+    .header-con .title-box h1{
+        font-weight: 700;
+    }
+    .header-con .score-box{
+        height: 80px;
+        width: 100px;
+        font-size: 0.8rem;
+    }
+    .header-con .score-box h3{
+        font-size: 1.4rem;
+        top: 65px;
+    }
+    .header-con .hi-box{
+        height: 80px;
+        width: 100px;
+        font-size: 0.8rem;
+    }
+    .header-con .hi-box h3{
+        font-size: 1.4rem;
+        top: 65px;
+    }
+    .htp-container{
+        font-weight: 500px;
+        font-size: 1rem;
+        width: 300px;
+    }
+    .reset-btn{
+        width: 120px;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 1150px){
+    #board{
+        width: 300px;
+        height: 300px;
+    }
+    .tile{
+        width: 65px;
+        height: 65px;
+        font-size: 30px;
+    }
+    .header-con{
+        padding: 2% 30%;
+        grid-gap: 2rem;
+    }
+    .header-con .title-box{
+        height: 80px;
+        width: 80px;
+        font-size: 0.8rem;
+    }
+    
+    .header-con .title-box h1{
+        font-weight: 700;
+    }
+    .header-con .score-box{
+        height: 70px;
+        width: 90px;
+        font-size: 0.5rem;
+    }
+    .header-con .score-box h3{
+        font-size: 1.8rem;
+        top: 20px;
+    }
+    .header-con .hi-box{
+        height: 70px;
+        width: 90px;
+        font-size: 0.5rem;
+    }
+    .header-con .hi-box h3{
+        font-size: 1.8rem;
+        top: 20px;
+    }
+    .htp-container{
+        font-weight: 500px;
+        font-size: 1rem;
+        width: 300px;
+        top: 83%;
+    }
+    .reset-btn{
+        width: 120px;
+        height: 40px;
+        top: 65%;
+    }
 }

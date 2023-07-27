@@ -157,7 +157,6 @@ document.addEventListener('keyup', (e) => {
         slideDown();
         setTwo();
     }
-
     
     document.getElementById("score").innerText = score;
 });
@@ -215,6 +214,7 @@ function slideRight(){
 } 
 
 function slideUp(){
+    var tempBoard = board;
     for(let c = 0; c < cols; c++){
         let row = [board[0][c], board[1][c], board[2][c], board[3][c]];
         row = slide(row);
