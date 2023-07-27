@@ -278,10 +278,4 @@ function gameOver(){
     document.getElementById("game-state").innerText = "OVER";
     document.getElementById("game-state").style.color = "red";
     document.getElementById("overlay").style.display = 'block';
-    document.getElementById("reset-btn").style.top = '76%';
-    document.getElementById("reset-btn").style.left = '50%';
-    document.getElementById("reset-btn").style.fontSize = '1.3rem';
-    document.getElementById("reset-btn").style.fontWeight = '600';
-    document.getElementById("reset-btn").style.width = '150px';
-    document.getElementById("reset-btn").style.height = '50px';
 }
