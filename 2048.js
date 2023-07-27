@@ -275,8 +275,9 @@ function checkVertical(){
 
 function gameOver(){
     document.getElementById("state").style.display = 'block';
+    document.getElementById("game-state").transform = 'scale(1)'
     document.getElementById("game-state").innerText = "OVER";
-    document.getElementById("game-state").style.color = "red";
+    document.getElementById("game-state").style.color = "black";
     document.getElementById("overlay").style.display = 'block';
 }
 
